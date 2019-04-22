@@ -10,15 +10,15 @@ use VK\TransportClient\TransportClientResponse;
 use VK\TransportClient\TransportRequestException;
 
 class VKApiRequest {
-    private const PARAM_VERSION = 'v';
-    private const PARAM_ACCESS_TOKEN = 'access_token';
-    private const PARAM_LANG = 'lang';
+    const PARAM_VERSION = 'v';
+    const PARAM_ACCESS_TOKEN = 'access_token';
+    const PARAM_LANG = 'lang';
 
-    private const KEY_ERROR = 'error';
-    private const KEY_RESPONSE = 'response';
+    const KEY_ERROR = 'error';
+    const KEY_RESPONSE = 'response';
 
-    protected const CONNECTION_TIMEOUT = 10;
-    protected const HTTP_STATUS_CODE_OK = 200;
+    const CONNECTION_TIMEOUT = 10;
+    const HTTP_STATUS_CODE_OK = 200;
 
     /**
      * @var string
@@ -179,7 +179,7 @@ class VKApiRequest {
      *
      * @throws VKClientException
      */
-    protected function checkHttpStatus(TransportClientResponse $response): void {
+    protected function checkHttpStatus(TransportClientResponse $response) {
         if ((int)$response->getHttpStatus() !== static::HTTP_STATUS_CODE_OK) {
             throw new VKClientException("Invalid http status: {$response->getHttpStatus()}");
         }

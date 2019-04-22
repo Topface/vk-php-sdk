@@ -8,8 +8,8 @@ use VK\TransportClient\TransportRequestException;
 
 class CurlHttpClient implements TransportClient {
 
-    protected const HEADER_UPLOAD_CONTENT_TYPE = 'Content-Type: multipart/form-data';
-    protected const QUESTION_MARK = '?';
+    const HEADER_UPLOAD_CONTENT_TYPE = 'Content-Type: multipart/form-data';
+    const QUESTION_MARK = '?';
 
     /**
      * @var array

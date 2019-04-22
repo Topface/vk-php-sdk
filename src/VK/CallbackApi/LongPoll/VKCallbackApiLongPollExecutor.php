@@ -14,30 +14,30 @@ use VK\TransportClient\TransportRequestException;
 
 class VKCallbackApiLongPollExecutor {
 
-    protected const PARAM_GROUP_ID = 'group_id';
-    protected const PARAM_ACT = 'act';
-    protected const PARAM_KEY = 'key';
-    protected const PARAM_TS = 'ts';
-    protected const PARAM_WAIT = 'wait';
-    protected const VALUE_ACT = 'a_check';
+    const PARAM_GROUP_ID = 'group_id';
+    const PARAM_ACT = 'act';
+    const PARAM_KEY = 'key';
+    const PARAM_TS = 'ts';
+    const PARAM_WAIT = 'wait';
+    const VALUE_ACT = 'a_check';
 
-    protected const EVENTS_FAILED = 'failed';
-    protected const EVENTS_TS = 'ts';
-    protected const EVENTS_UPDATES = 'updates';
+    const EVENTS_FAILED = 'failed';
+    const EVENTS_TS = 'ts';
+    const EVENTS_UPDATES = 'updates';
 
-    protected const EVENT_TYPE = 'type';
-    protected const EVENT_OBJECT = 'object';
+    const EVENT_TYPE = 'type';
+    const EVENT_OBJECT = 'object';
 
-    protected const SERVER_TIMESTAMP = 'ts';
-    protected const SERVER_URL = 'url';
-    protected const SERVER_KEY = 'key';
+    const SERVER_TIMESTAMP = 'ts';
+    const SERVER_URL = 'url';
+    const SERVER_KEY = 'key';
 
-    protected const ERROR_CODE_INCORRECT_TS_VALUE = 1;
-    protected const ERROR_CODE_TOKEN_EXPIRED = 2;
+    const ERROR_CODE_INCORRECT_TS_VALUE = 1;
+    const ERROR_CODE_TOKEN_EXPIRED = 2;
 
-    protected const CONNECTION_TIMEOUT = 10;
-    protected const HTTP_STATUS_CODE_OK = 200;
-    protected const DEFAULT_WAIT = 10;
+    const CONNECTION_TIMEOUT = 10;
+    const HTTP_STATUS_CODE_OK = 200;
+    const DEFAULT_WAIT = 10;
 
     protected $api_client;
     protected $access_token;

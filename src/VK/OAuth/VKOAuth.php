@@ -9,29 +9,29 @@ use VK\TransportClient\TransportClientResponse;
 use VK\TransportClient\TransportRequestException;
 
 class VKOAuth {
-    protected const VERSION = '5.95';
+    const VERSION = '5.95';
 
-    private const PARAM_VERSION = 'v';
-    private const PARAM_CLIENT_ID = 'client_id';
-    private const PARAM_REDIRECT_URI = 'redirect_uri';
-    private const PARAM_GROUP_IDS = 'group_ids';
-    private const PARAM_DISPLAY = 'display';
-    private const PARAM_SCOPE = 'scope';
-    private const PARAM_RESPONSE_TYPE = 'response_type';
-    private const PARAM_STATE = 'state';
-    private const PARAM_CLIENT_SECRET = 'client_secret';
-    private const PARAM_CODE = 'code';
-    private const PARAM_REVOKE = 'revoke';
+    const PARAM_VERSION = 'v';
+    const PARAM_CLIENT_ID = 'client_id';
+    const PARAM_REDIRECT_URI = 'redirect_uri';
+    const PARAM_GROUP_IDS = 'group_ids';
+    const PARAM_DISPLAY = 'display';
+    const PARAM_SCOPE = 'scope';
+    const PARAM_RESPONSE_TYPE = 'response_type';
+    const PARAM_STATE = 'state';
+    const PARAM_CLIENT_SECRET = 'client_secret';
+    const PARAM_CODE = 'code';
+    const PARAM_REVOKE = 'revoke';
 
-    private const RESPONSE_KEY_ERROR = 'error';
-    private const RESPONSE_KEY_ERROR_DESCRIPTION = 'error_description';
+    const RESPONSE_KEY_ERROR = 'error';
+    const RESPONSE_KEY_ERROR_DESCRIPTION = 'error_description';
 
-    protected const HOST = 'https://oauth.vk.com';
-    private const ENDPOINT_AUTHORIZE = '/authorize';
-    private const ENDPOINT_ACCESS_TOKEN = '/access_token';
+    const HOST = 'https://oauth.vk.com';
+    const ENDPOINT_AUTHORIZE = '/authorize';
+    const ENDPOINT_ACCESS_TOKEN = '/access_token';
 
-    protected const CONNECTION_TIMEOUT = 10;
-    protected const HTTP_STATUS_CODE_OK = 200;
+    const CONNECTION_TIMEOUT = 10;
+    const HTTP_STATUS_CODE_OK = 200;
 
     /**
      * @var CurlHttpClient
@@ -175,7 +175,7 @@ class VKOAuth {
      *
      * @throws VKClientException
      */
-    protected function checkHttpStatus(TransportClientResponse $response): void {
+    protected function checkHttpStatus(TransportClientResponse $response) {
         if ((int)$response->getHttpStatus() !== static::HTTP_STATUS_CODE_OK) {
             throw new VKClientException("Invalid http status: {$response->getHttpStatus()}");
         }
