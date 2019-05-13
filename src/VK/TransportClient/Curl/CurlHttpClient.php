@@ -37,7 +37,7 @@ class CurlHttpClient implements TransportClient {
      * @return TransportClientResponse
      * @throws TransportRequestException
      */
-    public function post(string $url, ?array $payload = null): TransportClientResponse {
+    public function post(string $url, $payload = null): TransportClientResponse {
         return $this->sendRequest($url, array(
             CURLOPT_POST       => 1,
             CURLOPT_POSTFIELDS => $payload
@@ -53,7 +53,7 @@ class CurlHttpClient implements TransportClient {
      * @return TransportClientResponse
      * @throws TransportRequestException
      */
-    public function get(string $url, ?array $payload = null): TransportClientResponse {
+    public function get(string $url, $payload = null): TransportClientResponse {
         return $this->sendRequest($url . static::QUESTION_MARK . http_build_query($payload), array());
     }
 

@@ -77,7 +77,7 @@ class VKOAuth {
      * @see VKOAuthUserScope
      */
     public function getAuthorizeUrl(string $response_type, int $client_id, string $redirect_uri, string $display,
-                                    ?array $scope = null, ?string $state = null, ?array $group_ids = null, bool $revoke = false): string {
+                                     $scope = null, $state = null, $group_ids = null, bool $revoke = false): string {
         $scope_mask = 0;
         foreach ($scope as $scope_setting) {
             $scope_mask |= $scope_setting;

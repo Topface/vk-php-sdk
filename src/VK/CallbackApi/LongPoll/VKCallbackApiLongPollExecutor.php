@@ -76,7 +76,7 @@ class VKCallbackApiLongPollExecutor {
      * @throws VKApiException
      * @throws VKClientException
      */
-    public function listen(?int $ts = null) {
+    public function listen($ts = null) {
         if ($this->server === null) {
             $this->server = $this->getLongPollServer();
         }

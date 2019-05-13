@@ -16,7 +16,7 @@ abstract class VKCallbackApiServerHandler extends VKCallbackApiHandler {
      * @param int $group_id
      * @param null|string $secret
      */
-    abstract function confirmation(int $group_id, ?string $secret);
+    abstract function confirmation(int $group_id, $secret);
 
     /**
      * @param $event

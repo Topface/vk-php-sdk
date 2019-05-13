@@ -46,259 +46,259 @@ abstract class VKCallbackApiHandler {
      * @param null|string $secret
      * @param array $object
      */
-    public function messageNew(int $group_id, ?string $secret, array $object) {}
+    public function messageNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function messageReply(int $group_id, ?string $secret, array $object) {}
+    public function messageReply(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function messageAllow(int $group_id, ?string $secret, array $object) {}
+    public function messageAllow(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function messageDeny(int $group_id, ?string $secret, array $object) {}
+    public function messageDeny(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function photoNew(int $group_id, ?string $secret, array $object) {}
+    public function photoNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function photoCommentNew(int $group_id, ?string $secret, array $object) {}
+    public function photoCommentNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function photoCommentEdit(int $group_id, ?string $secret, array $object) {}
+    public function photoCommentEdit(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function photoCommentRestore(int $group_id, ?string $secret, array $object) {}
+    public function photoCommentRestore(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function photoCommentDelete(int $group_id, ?string $secret, array $object) {}
+    public function photoCommentDelete(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function audioNew(int $group_id, ?string $secret, array $object) {}
+    public function audioNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function videoNew(int $group_id, ?string $secret, array $object) {}
+    public function videoNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function videoCommentNew(int $group_id, ?string $secret, array $object) {}
+    public function videoCommentNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function videoCommentEdit(int $group_id, ?string $secret, array $object) {}
+    public function videoCommentEdit(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function videoCommentRestore(int $group_id, ?string $secret, array $object) {}
+    public function videoCommentRestore(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function videoCommentDelete(int $group_id, ?string $secret, array $object) {}
+    public function videoCommentDelete(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function wallPostNew(int $group_id, ?string $secret, array $object) {}
+    public function wallPostNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function wallRepost(int $group_id, ?string $secret, array $object) {}
+    public function wallRepost(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function wallReplyNew(int $group_id, ?string $secret, array $object) {}
+    public function wallReplyNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function wallReplyEdit(int $group_id, ?string $secret, array $object) {}
+    public function wallReplyEdit(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function wallReplyRestore(int $group_id, ?string $secret, array $object) {}
+    public function wallReplyRestore(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function wallReplyDelete(int $group_id, ?string $secret, array $object) {}
+    public function wallReplyDelete(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function boardPostNew(int $group_id, ?string $secret, array $object) {}
+    public function boardPostNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function boardPostEdit(int $group_id, ?string $secret, array $object) {}
+    public function boardPostEdit(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function boardPostRestore(int $group_id, ?string $secret, array $object) {}
+    public function boardPostRestore(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function boardPostDelete(int $group_id, ?string $secret, array $object) {}
+    public function boardPostDelete(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function marketCommentNew(int $group_id, ?string $secret, array $object) {}
+    public function marketCommentNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function marketCommentEdit(int $group_id, ?string $secret, array $object) {}
+    public function marketCommentEdit(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function marketCommentRestore(int $group_id, ?string $secret, array $object) {}
+    public function marketCommentRestore(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function marketCommentDelete(int $group_id, ?string $secret, array $object) {}
+    public function marketCommentDelete(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function groupLeave(int $group_id, ?string $secret, array $object) {}
+    public function groupLeave(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function groupJoin(int $group_id, ?string $secret, array $object) {}
+    public function groupJoin(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function groupChangeSettings(int $group_id, ?string $secret, array $object) {}
+    public function groupChangeSettings(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function groupChangePhoto(int $group_id, ?string $secret, array $object) {}
+    public function groupChangePhoto(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function groupOfficersEdit(int $group_id, ?string $secret, array $object) {}
+    public function groupOfficersEdit(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function pollVoteNew(int $group_id, ?string $secret, array $object) {}
+    public function pollVoteNew(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function userBlock(int $group_id, ?string $secret, array $object) {}
+    public function userBlock(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
      * @param null|string $secret
      * @param array $object
      */
-    public function userUnblock(int $group_id, ?string $secret, array $object) {}
+    public function userUnblock(int $group_id, $secret, array $object) {}
 
     /**
      * @param int $group_id
@@ -306,7 +306,7 @@ abstract class VKCallbackApiHandler {
      * @param string $type
      * @param array $object
      */
-    public function parseObject(int $group_id, ?string $secret, string $type, array $object) {
+    public function parseObject(int $group_id, $secret, string $type, array $object) {
         switch ($type) {
             case static::CALLBACK_EVENT_MESSAGE_NEW:
                 $this->messageNew($group_id, $secret, $object);
